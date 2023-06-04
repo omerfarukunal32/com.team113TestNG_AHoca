@@ -31,8 +31,10 @@ public class C01_US_032 {
 
         Assert.assertEquals(expectedIcerik,actualWiewOrdersElementi);
 
+        WebElement resultShowing =Driver.getDriver().findElement(By.id("dataTable_info"));
+        Assert.assertTrue(resultShowing.isDisplayed());
 
-
+        Driver.closeDriver();
 
     }
 }
