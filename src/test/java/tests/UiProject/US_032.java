@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.Driver;
 
-public class C01_US_032 {
+public class US_032 {
     @Test
     public void TestUi() throws InterruptedException {
         Driver.getDriver().get("https://qa.tripandway.com/admin/login");

@@ -18,11 +18,11 @@ public class US_18 {
 
         Driver.getDriver().findElement(By.xpath("//*[text()='Registration']")).click();  // registration buttonu
 
-        WebElement nameRegElementi= Driver.getDriver().findElement(By.xpath("//*[@type='text'][1]"));
-        nameRegElementi.sendKeys("svd");
+        WebElement nameRegistrationElementi= Driver.getDriver().findElement(By.xpath("//*[@type='text'][1]"));
+        nameRegistrationElementi.sendKeys("svd");
 
-        WebElement emailRegElementi= Driver.getDriver().findElement(By.xpath("//*[@type='email']"));
-        emailRegElementi.sendKeys("svdbsk3232@gmail.com");
+        WebElement emailRegistrationElementi= Driver.getDriver().findElement(By.xpath("//*[@type='email']"));
+        emailRegistrationElementi.sendKeys("svdbsk3232@gmail.com");
 
         WebElement passwordRegElementi= Driver.getDriver().findElement(By.xpath("//*[@type='password']"));
         passwordRegElementi.sendKeys("svdbsk3232@");
