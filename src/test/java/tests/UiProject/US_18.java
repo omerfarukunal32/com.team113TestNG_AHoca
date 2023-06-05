@@ -30,6 +30,9 @@ public class US_18 {
         WebElement makeRegistrationElementi =Driver.getDriver().findElement(By.xpath("//*[@type='submit']"));
         makeRegistrationElementi.click();
 
+        WebElement toastAlertElement = Driver.getDriver().findElement(By.xpath("//div[@class='toast-message']"));
+        Assert.assertTrue(toastAlertElement.isDisplayed());
+
         Driver.getDriver().switchTo().newWindow(WindowType.TAB);
 
         Driver.getDriver().get(ConfigReader.getProperty("tripUrl"));
@@ -50,6 +53,8 @@ public class US_18 {
         Assert.assertTrue(updatePasswordElement.isDisplayed());
 
         Driver.quitDriver();
+
+        // already exists   ( //div[@class='toast-message'] )
 
     }
 
