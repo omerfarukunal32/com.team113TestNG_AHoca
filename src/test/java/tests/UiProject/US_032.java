@@ -9,6 +9,7 @@ import utilities.Driver;
 public class US_032 {
     @Test
     public void TestUi() throws InterruptedException {
+        // Go to https://qa.tripandway.com/admin/login
         Driver.getDriver().get("https://qa.tripandway.com/admin/login");
 
         String expectedIcerik = "Login";
