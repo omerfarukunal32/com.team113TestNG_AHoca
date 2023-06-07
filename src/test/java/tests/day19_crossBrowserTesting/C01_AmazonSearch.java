@@ -14,6 +14,9 @@ public class C01_AmazonSearch extends TestBaseCross {
     @Test
     public void amazonTest(){
 
+        // yapilmasi gereken, classlarimizi TestBaseCross'a extends edecegiz
+        // sonra da driver objesini kullanacagiz
+
         // amazon ana sayfaya gidelim
         driver.get("https://www.amazon.com");
 
